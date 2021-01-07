@@ -10,8 +10,10 @@ import logoImg from '../../assets/logo.png';
 import styles from './styles';
 
 export default function Incidents() {
-    const [incidents, setIncidents] = useState([]);
-    const [total, setTotal] = useState(0);
+    const [incidents, setIncidents] = useState([
+    { name: 'Teste', title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, inventore! Voluptatibus cum sint dolor eum molestias? Quae rerum inventore odit.", value: 9999 }
+    ]);
+    const [total, setTotal] = useState(1);
     const [page, setPage] = useState(1);
     const [loading, setLoading] = useState(false);
 
